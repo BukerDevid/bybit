@@ -60,6 +60,30 @@ const (
 	SymbolV5ETHUSDC = SymbolV5("ETHUSDC")
 )
 
+// Base map Perpetual symbol.
+var SymbolV5ByValue = map[string]SymbolV5{
+	// USDT Perpetual:
+	string(SymbolV5BTCUSDT): SymbolV5BTCUSDT,
+	string(SymbolV5ETHUSDT): SymbolV5ETHUSDT,
+
+	// USDC Perpetual
+	string(SymbolV5BTCPERP): SymbolV5BTCPERP,
+	string(SymbolV5ETHPERP): SymbolV5ETHPERP,
+
+	// Inverse Perpetual
+	string(SymbolV5BTCUSD): SymbolV5BTCUSD,
+	string(SymbolV5ETHUSD): SymbolV5ETHUSD,
+
+	// Inverse Futures
+	string(SymbolV5BTCUSDH23): SymbolV5BTCUSDH23,
+	string(SymbolV5BTCUSDM23): SymbolV5BTCUSDM23,
+	string(SymbolV5BTCUSDU23): SymbolV5BTCUSDU23,
+	string(SymbolV5BTCUSDZ23): SymbolV5BTCUSDZ23,
+
+	// Spot
+	string(SymbolV5ETHUSDC): SymbolV5ETHUSDC,
+}
+
 // TriggerDirection :
 type TriggerDirection int
 
